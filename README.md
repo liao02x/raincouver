@@ -12,6 +12,17 @@ are things you can do:
 -   Play with built-in dataset `raincouver10` contains weather data from
     2010-01-01 to 2018-12-31.
 
+Install
+-------
+
+The package is on my github now, so it is easier to install by:
+
+``` r
+devtools::install_github("liao02x/raincouver")
+#> Skipping install of 'raincouver' from a github remote, the SHA1 (2988a949) has not changed since last install.
+#>   Use `force = TRUE` to force installation
+```
+
 Example
 -------
 
@@ -67,7 +78,7 @@ plot_climate(df)
 #> Warning: Removed 56 rows containing missing values (geom_point).
 ```
 
-![](README-unnamed-chunk-5-1.png)
+![](README-unnamed-chunk-6-1.png)
 
 ### Play with `raincouver10`
 

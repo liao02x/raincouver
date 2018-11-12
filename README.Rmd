@@ -23,6 +23,15 @@ knitr::opts_chunk$set(
 - Generate awesome plots yearly climate summary.
 - Play with built-in dataset `raincouver10` contains weather data from 2010-01-01 to 2018-12-31.
 
+## Install
+
+The package is on my github now, so it is easier to install by:
+
+```{r}
+devtools::install_github("liao02x/raincouver")
+```
+
+
 ## Example
 
 Here are some basic examples:

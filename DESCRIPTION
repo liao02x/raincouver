@@ -1,0 +1,15 @@
+Package: raincouver
+Type: Package
+Title: Get and analyse the weather data of vancouver
+Version: 0.1.0
+Authors@R: person("Minzhi", "Liao", email = "liao02x@gmail.com", role = c("aut", "cre"))
+Description: Get vancouver weather data from Government of Canada.
+    Some basic functions are provided to play with weather data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

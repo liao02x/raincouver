@@ -1,0 +1,74 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# Raincouver
+
+`Raincouver` is a package that allows you to easily obtain, process, analyse and generate awesome plots with weather data of vancouver. Here are things you can do:
+
+- Get daily weather data from a certain year
+- Do some analyses with data, like counting rainy days.
+- Generate awesome plots yearly climate summary.
+- Play with built-in dataset `raincouver10` contains weather data from 2010-01-01 to 2018-12-31.
+
+## Example
+
+Here are some basic examples:
+
+```{r}
+library(raincouver)
+```
+
+
+### Get data
+
+With `get_data` you can easily access to daily weather data by year. Defaultly you will get the data of year 2018.
+
+```{r}
+df <- get_data()
+knitr::kable(head(df))
+```
+
+
+### Do some analyses
+
+There is some built-in functions in `raincouver` help to make data analyses easier.
+
+`count_rainy` can count rainy days in weather data. Use `rf` argument to specify how much precipitation it needs to be a rainy day. Defaultly `rf` is set to `10mm`.
+
+```{r}
+count_rainy(df)
+count_rainy(df, 1)
+```
+
+
+
+### Generate plots
+
+With `plot_climate` function, you can easily summarise the climate infomation of a year.
+
+```{r, fig.height=5, fig.width = 7}
+plot_climate(df)
+```
+
+
+### Play with `raincouver10`
+
+A built-in dataset for convenience.
+
+```{r}
+knitr::kable(summary(raincouver10))
+```
+
